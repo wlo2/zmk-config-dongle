@@ -54,6 +54,11 @@
             bindings = <&kp DEL>;
             key-positions = <0 1>;
         };
+
+        Lang {
+            bindings = <&kp CAPSLOCK>;
+            key-positions = <2 13>;
+        };
     };
 
     macros {
@@ -71,10 +76,10 @@
         Base {
             display-name = "Base";
             bindings = <
-              &kp Q  &kp W  &kp E            &kp R      &kp T              &kp Y       &kp U       &kp I          &kp O    &kp P
-              &kp A  &kp S  &kp D            &kp F      &kp G              &kp H       &kp J       &kp K          &kp L    &kp SEMICOLON
-&lt 0 ESCAPE  &kp Z  &kp X  &kp C            &kp V      &kp B              &kp N       &kp M       &kp COMMA      &kp DOT  &kp SLASH      &kp APOSTROPHE
-                            &mt LCTRL ENTER  &kp SPACE  &lt 2 BACKSPACE    &kp LSHIFT  &lt 1 BSPC  &mt LCTRL TAB
+              &kp Q  &kp W  &kp E               &kp R      &kp T         &kp Y       &kp U       &kp I          &kp O    &kp P
+              &kp A  &kp S  &kp D               &kp F      &kp G         &kp H       &kp J       &kp K          &kp L    &kp SEMICOLON
+&lt 0 ESCAPE  &kp Z  &kp X  &kp C               &kp V      &kp B         &kp N       &kp M       &kp COMMA      &kp DOT  &kp SLASH      &kp APOSTROPHE
+                            &mt LCTRL KP_ENTER  &kp SPACE  &lt 2 BSPC    &sk LSHIFT  &lt 1 BSPC  &mt LCTRL TAB
             >;
         };
 
@@ -93,7 +98,7 @@
             bindings = <
            &kp EXCL      &kp AT        &kp HASH      &kp DOLLAR     &kp PERCENT    &kp CARET       &kp AMPERSAND  &kp KP_ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
            &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4   &kp N5         &kp NUMBER_6    &kp N7         &kp N8           &kp N9                &kp N0
-&kp GRAVE  &trans        &kp PLUS      &kp PIPE      &kp LS(RS(V))  &kp TILDE      &kp UNDERSCORE  &kp MINUS      &kp EQUAL        &kp EQUAL             &kp SLASH              &kp RIGHT_BRACE
+&kp GRAVE  &trans        &kp PLUS      &kp PIPE      &kp LS(LC(V))  &kp TILDE      &kp UNDERSCORE  &kp MINUS      &kp EQUAL        &kp EQUAL             &kp SLASH              &kp RIGHT_BRACE
                                        &trans        &trans         &trans         &trans          &trans         &trans
             >;
         };
@@ -103,8 +108,8 @@
             bindings = <
        &kp Q  &kp V  &kp J   &kp K   &kp Z     &kp X            &kt G  &kp SEMICOLON  &kp SLASH  &kp PERIOD
        &kp N  &kp S  &kp H   &kp T   &kp M     &kp Y            &kp C  &kp A          &kp E      &kp I
-&kp P  &kp B  &kp F  &kp L   &kp D   &QU       &kp SQT          &kp W  &kp O          &kt U      &kp COMMA   &kp C_REPEAT
-                     &trans  &trans  &trans    &lt 1 BACKSPACE  &kp R  &kp LSHIFT
+&kp P  &kp B  &kp F  &kp L   &kp D   &QU       &kp SQT          &kp W  &kp O          &kp U      &kp COMMA   &kp C_REPEAT
+                     &trans  &trans  &trans    &lt 1 BACKSPACE  &kp R  &sk LSHIFT
             >;
         };
     };
