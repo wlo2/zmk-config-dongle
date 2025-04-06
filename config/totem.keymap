@@ -69,6 +69,11 @@
             bindings = <&kp KP_PLUS>;
             key-positions = <9 31>;
         };
+
+        Tab {
+            bindings = <&kp TAB>;
+            key-positions = <22 21>;
+        };
     };
 
     macros {
