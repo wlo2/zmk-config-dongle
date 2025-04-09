@@ -22,7 +22,7 @@
 #define Gameplus    5
 
 &mt {
-    quick-tap-ms = <200>;
+    quick-tap-ms = <180>;
     global-quick-tap;
     flavor = "hold-preferred";
     tapping-term-ms = <200>;
@@ -31,7 +31,7 @@
 &lt {
     tapping-term-ms = <200>;
     flavor = "hold-preferred";
-    quick-tap-ms = <200>;
+    quick-tap-ms = <180>;
 };
 
 / {
@@ -136,10 +136,10 @@
 
         Tri-layer {
             bindings = <
-        &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-        &kp Q   &kp W   &kp E   &kp R   &kp T     &kp Y   &kp U   &kp I   &kp O   &kp SQT
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans   &trans
-                        &trans  &trans  &trans    &trans  &trans  &trans
+        &trans     &trans     &trans       &trans   &trans       &trans     &trans         &trans     &trans     &trans
+        &kp CLEAR  &kp LC(B)  &kp LS(TAB)  &kp TAB  &kp CLEAR    &kp CLEAR  &kp LC(SLASH)  &kp CLEAR  &kp CLEAR  &kp SQT
+&trans  &trans     &trans     &trans       &trans   &trans       &trans     &trans         &trans     &trans     &trans   &trans
+                              &trans       &trans   &trans       &trans     &trans         &trans
             >;
         };
     };
