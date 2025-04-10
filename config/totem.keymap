@@ -127,18 +127,18 @@
         Sym {
             display-name = "Sym";
             bindings = <
-           &kp EXCL      &kp AT        &kp HASH      &kp DOLLAR     &kp PERCENT    &kp CARET       &kp AMPERSAND  &kp KP_ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
-           &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4   &kp N5         &kp NUMBER_6    &kp N7         &kp N8           &kp N9                &kp N0
-&kp GRAVE  &trans        &kp PLUS      &kp PIPE      &kp LS(LC(V))  &kp TILDE      &kp UNDERSCORE  &kp MINUS      &kp EQUAL        &kp LS(SLASH)         &kp LS(LEFT_BRACKET)   &kp LEFT_BRACKET
-                                       &trans        &trans         &trans         &trans          &trans         &trans
+               &kp EXCL      &kp AT        &kp HASH      &kp DOLLAR     &kp PERCENT    &kp CARET       &kp AMPERSAND  &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
+               &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4   &kp N5         &kp NUMBER_6    &kp N7         &kp N8        &kp N9                &kp N0
+&kp LS(GRAVE)  &kp GRAVE     &kp PLUS      &kp PIPE      &kp LS(LC(V))  &kp TAB        &kp UNDERSCORE  &kp MINUS      &kp EQUAL     &kp LS(SLASH)         &kp LS(LEFT_BRACKET)   &kp LEFT_BRACKET
+                                           &trans        &trans         &trans         &trans          &trans         &trans
             >;
         };
 
         Tri-layer {
             bindings = <
-        &trans     &trans     &trans       &trans   &trans       &trans     &trans         &trans     &trans     &trans
-        &kp CLEAR  &kp LC(B)  &kp LS(TAB)  &kp TAB  &kp CLEAR    &kp CLEAR  &kp LC(SLASH)  &kp CLEAR  &kp CLEAR  &kp SQT
-&trans  &trans     &trans     &trans       &trans   &trans       &trans     &trans         &trans     &trans     &trans   &trans
+        &trans     &trans     &trans       &trans   &trans       &trans     &trans         &trans             &trans     &trans
+        &kp CLEAR  &kp LC(B)  &kp LS(TAB)  &kp TAB  &kp CLEAR    &kp CLEAR  &kp LC(SLASH)  &kp LC(BACKSPACE)  &kp CLEAR  &kp SQT
+&trans  &trans     &trans     &trans       &trans   &trans       &trans     &trans         &trans             &trans     &trans   &trans
                               &trans       &trans   &trans       &trans     &trans         &trans
             >;
         };
