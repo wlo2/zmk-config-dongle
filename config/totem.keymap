@@ -115,7 +115,7 @@
             bindings = <
                   &kp P  &kp V  &kp J   &kp K   &kp Z     &kp X            &kp G  &kp SEMICOLON  &kp SLASH  &kp PERIOD
                   &kp N  &kp S  &kp H   &kp T   &kp M     &kp Y            &kp C  &kp A          &kp E      &kp I
-&mt LEFT_SHIFT Q  &kp B  &kp F  &kp L   &kp D   &QU       &kp SQT          &kp W  &kp O          &kp U      &kp COMMA   &kp C_REPEAT
+&mt LEFT_SHIFT Q  &kp B  &kp F  &kp L   &kp D   &QU       &kp SQT          &kp W  &kp O          &kp U      &kp COMMA   &key_repeat
                                 &trans  &trans  &trans    &lt 2 BACKSPACE  &kp R  &sk LSHIFT
             >;
         };
