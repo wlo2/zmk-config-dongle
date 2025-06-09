@@ -113,20 +113,20 @@
         Night {
             display-name = "Night";
             bindings = <
-                  &kp P  &kp V  &kp J   &kp K   &kp Z     &kp X            &kp G  &key_repeat  &kp SLASH  &kp PERIOD
-                  &kp N  &kp S  &kp H   &kp T   &kp M     &kp Y            &kp C  &kp A        &kp E      &kp I
-&mt LEFT_SHIFT Q  &kp B  &kp F  &kp L   &kp D   &QU       &kp SQT          &kp W  &kp O        &kp U      &kp COMMA   &kp SEMI
-                                &trans  &trans  &trans    &lt 2 BACKSPACE  &kp R  &sk LSHIFT
+                       &kp P  &kp V  &kp J   &kp K   &kp Z     &kp X            &kp G  &key_repeat  &kp SLASH  &kp PERIOD
+                       &kp N  &kp S  &kp H   &kp T   &kp M     &kp Y            &kp C  &kp A        &kp E      &kp I
+&mt LEFT_SHIFT ESCAPE  &kp B  &kp F  &kp L   &kp D   &QU       &kp SQT          &kp W  &kp O        &kp U      &kp COMMA   &kp SEMI
+                                     &trans  &trans  &trans    &lt 2 BACKSPACE  &kp R  &sk LSHIFT
             >;
         };
 
         Nav {
             display-name = "Nav";
             bindings = <
-           &tog 1        &kp HOME     &kp UP_ARROW    &kp END    &kp LBRC    &kp RBRC  &kp CLEAR  &kp CLEAR  &kp CLEAR  &kp CLEAR
-           &kp DEL       &kp LEFT     &kp DOWN        &kp RIGHT  &kp LBKT    &kp RBKT  &kp CLEAR  &kp CLEAR  &kp CLEAR  &kp LEFT_BRACKET
-&kp TILDE  &kp LEFT_WIN  &kp LS(TAB)  &Remnote_arrow  &kp TAB    &kp LPAR    &kp RPAR  &kp CLEAR  &kp CLEAR  &kp CLEAR  &kp CLEAR         &kp PRINTSCREEN
-                                      &trans          &trans     &trans      &trans    &trans     &trans
+           &Remnote_arrow  &kp HOME     &kp UP_ARROW   &kp END    &kp LBRC    &kp RBRC  &kp CLEAR  &kp CLEAR  &kp CLEAR  &kp CLEAR
+           &kp DEL         &kp LEFT     &kp DOWN       &kp RIGHT  &kp LBKT    &kp RBKT  &kp CLEAR  &kp CLEAR  &kp CLEAR  &kp LEFT_BRACKET
+&kp TILDE  &kp LEFT_WIN    &kp LS(TAB)  &kp AMPERSAND  &kp TAB    &kp LPAR    &kp RPAR  &kp CLEAR  &kp CLEAR  &kp CLEAR  &kp CLEAR         &kp PRINTSCREEN
+                                        &trans         &trans     &trans      &trans    &trans     &trans
             >;
         };
 
@@ -142,10 +142,10 @@
 
         Tri-layer {
             bindings = <
-        &kp F6     &kp F7     &kp F8         &kp F9     &kp F10      &trans     &kp F11        &kp F12            &kp F13    &kp F14
-        &kp CLEAR  &kp LC(B)  &kp LS(CLEAR)  &kp CLEAR  &kp CLEAR    &kp CLEAR  &kp LC(SLASH)  &kp LC(BACKSPACE)  &kp CLEAR  &kp SQT
-&trans  &kp F1     &kp F2     &kp F3         &kp F4     &kp F5       &trans     &trans         &trans             &trans     &trans   &trans
-                              &trans         &trans     &trans       &trans     &trans         &trans
+        &kp F6     &kp F7     &kp F8         &kp F9     &kp F10      &trans  &kp F11        &kp F12            &kp F13    &kp F14
+        &kp CLEAR  &kp LC(B)  &kp LS(CLEAR)  &kp CLEAR  &kp CLEAR    &tog 1  &kp LC(SLASH)  &kp LC(BACKSPACE)  &kp CLEAR  &kp SQT
+&trans  &kp F1     &kp F2     &kp F3         &kp F4     &kp F5       &trans  &trans         &trans             &trans     &trans   &trans
+                              &trans         &trans     &trans       &trans  &trans         &trans
             >;
         };
     };
