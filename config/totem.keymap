@@ -102,6 +102,13 @@
             bindings = <&none &kp Q &kp LS(Q) &kp N2 &kp N2 &kp N2 &kp N2 &kp N2 &kp N2 &kp N2 &kp N2 &kp N2 &kp AT &kp AT &kp AT>;
             label = "STRING";
         };
+
+        ahahahah: ahahahah {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&none &kp LBKT &kp F>;
+            label = "AHAHAHAH";
+        };
     };
 
     keymap {
@@ -150,7 +157,7 @@
         Tri-layer {
             bindings = <
         &kp F6     &kp F7     &kp F8         &kp F9     &kp F10    &trans  &kp F11        &kp F12            &kp F13    &kp F14
-        &kp CLEAR  &kp LC(B)  &kp LS(CLEAR)  &kp CLEAR  &string    &tog 1  &kp LC(SLASH)  &kp LC(BACKSPACE)  &kp CLEAR  &kp SQT
+        &kp CLEAR  &kp LC(B)  &kp LS(CLEAR)  &ahahahah  &string    &tog 1  &kp LC(SLASH)  &kp LC(BACKSPACE)  &kp CLEAR  &kp SQT
 &trans  &kp F1     &kp F2     &kp F3         &kp F4     &kp F5     &trans  &trans         &trans             &trans     &trans   &trans
                               &trans         &trans     &trans     &trans  &trans         &trans
             >;
