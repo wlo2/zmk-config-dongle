@@ -10,7 +10,6 @@
 //
 // ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
 
-#include "secret_macro.overlay" // Keep if you use the separate overlay file
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
 
@@ -35,6 +34,7 @@
 };
 
 / {
+    #include "secret_macro.overlay" // separate overlay file
     behaviors {
         hm: homerow_mods {
             compatible = "zmk,behavior-hold-tap";
@@ -148,7 +148,7 @@
 
         Tri-layer {
             bindings = <
-        &kp F6  &kp F7     &kp F8         &kp F9     &kp F10          &trans  &kp F11        &kp F12            &kp F13  &kp F14
+        &kp F6  &kp F7     &kp F8         &kp F9     &kp F10          &soft_off  &kp F11        &kp F12            &kp F13  &kp F14
         &trans  &kp LC(B)  &kp LS(CLEAR)  &ahahahah  &secret_macro    &tog 1  &kp LC(SLASH)  &kp LC(BACKSPACE)  &trans   &kp SQT
 &trans  &kp F1  &kp F2     &kp F3         &kp F4     &kp F5           &trans  &trans         &trans             &trans   &trans   &trans
                            &trans         &trans     &trans           &trans  &trans         &trans
