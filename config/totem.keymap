@@ -34,7 +34,8 @@
 };
 
 / {
-    #include "secret_macro.overlay" // separate overlay file
+    #include "secret_macro.overlay"
+
     behaviors {
         hm: homerow_mods {
             compatible = "zmk,behavior-hold-tap";
@@ -101,6 +102,21 @@
             bindings = <&kp GREATER_THAN &kp GREATER_THAN>;
             label = "REMNOTE_ARROW";
         };
+
+        ahahahah: ahahahah {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LBKT &kp F>;
+            label = "AHAHAHAH";
+        };
+
+        OO: OO {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp O &kp O>;
+            label = "OO";
+            tap-ms = <28>;
+        };
     };
 
     keymap {
@@ -148,10 +164,10 @@
 
         Tri-layer {
             bindings = <
-        &kp F6  &kp F7     &kp F8         &kp F9     &kp F10          &soft_off  &kp F11        &kp F12            &kp F13  &kp F14
-        &trans  &kp LC(B)  &kp LS(CLEAR)  &ahahahah  &secret_macro    &tog 1  &kp LC(SLASH)  &kp LC(BACKSPACE)  &trans   &kp SQT
-&trans  &kp F1  &kp F2     &kp F3         &kp F4     &kp F5           &trans  &trans         &trans             &trans   &trans   &trans
-                           &trans         &trans     &trans           &trans  &trans         &trans
+        &kp F6  &kp F7     &kp F8     &kp F9     &kp F10          &soft_off  &kp F11        &kp F12            &kp F13  &kp F14
+        &trans  &kp LC(B)  &kp CLEAR  &ahahahah  &secret_macro    &tog 1     &kp LC(SLASH)  &kp LC(BACKSPACE)  &trans   &kp SQT
+&trans  &kp F1  &kp F2     &kp F3     &kp F4     &kp F5           &trans     &trans         &trans             &trans   &trans   &trans
+                           &trans     &trans     &trans           &trans     &trans         &trans
             >;
         };
     };
